@@ -1,5 +1,4 @@
 require "plugins"
-require "lsp"
 
 -- Global autocmds
 require "adi.config.autocmds"
@@ -8,10 +7,9 @@ require "adi.config.autocmds"
 require "adi.config.options"
 require "adi.config.toggleterm"
 require "adi.config.devicons"
-
+require "adi.config.dashboard"
 -- Keymaps
 require "adi.config.keymaps"
-
 require "tree"
 
 --require "plugins.lazy"
@@ -19,3 +17,4 @@ require "tree"
 -- Colorscheme
 require "adi.config.colorscheme"
 require "adi.config.lualine"
+
