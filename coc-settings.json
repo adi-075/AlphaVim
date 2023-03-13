@@ -1,8 +1,0 @@
-{
-	"languageserver": {
-		"rust-analyzer": {
-				"enable": true,
-				"coc.preferences.formatOnSave": true
-		}
-	}
-}
