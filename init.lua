@@ -1,20 +1,15 @@
-require "plugins"
-
--- Global autocmds
-require "adi.config.autocmds"
-
 -- Editor Settings
+require "adi.config.autocmds"
 require "adi.config.options"
 require "adi.config.toggleterm"
-require "adi.config.devicons"
-require "adi.config.dashboard"
+
 -- Keymaps
 require "adi.config.keymaps"
-require "tree"
 
---require "plugins.lazy"
+-- UI 
+require "adi.config.devicons"
+require "adi.config.dashboard"
 
--- Colorscheme
-require "adi.config.colorscheme"
-require "adi.config.lualine"
+-- Package Manager
+require "plugins.lazy"
 
