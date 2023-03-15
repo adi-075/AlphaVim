@@ -18,5 +18,7 @@ command.</li>
 <h1>Screenshots</h1>
 <div class="screenshots">
 <img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/1.png" alt="Nvim - Dashboard"></img>
-<img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/2.png" alt="Coding Demo"></img>
+<img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/2.png" alt="Split Mode"></img>
+<img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/3.png" alt="LSP"></img>
+<img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/4.png" alt="Telescope.nvim"></img>
 </div>
