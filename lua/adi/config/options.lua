@@ -1,5 +1,6 @@
 vim.opt.mouse = 'a'
 vim.opt.ignorecase = true
+vim.wo.fillchars='eob: '
 vim.opt.smartcase = true
 vim.opt.hlsearch = false
 vim.opt.wrap = true
