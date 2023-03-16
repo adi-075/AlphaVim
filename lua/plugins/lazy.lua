@@ -13,6 +13,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
+    "windwp/nvim-autopairs",
+    config = function()
+      require("nvim-autopairs").setup {}
+    end,
+  },
+
+  {
     "folke/which-key.nvim",
     config = function()
       vim.o.timeout = true
@@ -21,7 +28,9 @@ require("lazy").setup({
   },
   --  { "folke/neoconf.nvim", cmd = "Neoconf" },
   "folke/neodev.nvim",
+  "nvim-treesitter/nvim-treesitter",
 
+  -- Colorschemes
   {
     'folke/tokyonight.nvim',
     config = function()
@@ -31,10 +40,15 @@ require("lazy").setup({
         terminal_colors = true,           -- Configure the colors used when opening a `:terminal` in Neovim
         sidebars = { "qf", "help" },      -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
         hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
-        dim_inactive = true -- dims inactive windows
+        dim_inactive = true               -- dims inactive windows
       })
-      vim.cmd [[colorscheme tokyonight]]
+      vim.cmd('colorscheme tokyonight-moon')
     end,
+  },
+
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine'
   },
 
   "nvim-lua/plenary.nvim",
