@@ -17,14 +17,14 @@ require("lazy").setup({
     branch = 'v2.x',
     dependencies = {
       -- LSP Support
-      {'neovim/nvim-lspconfig'},             -- Required
-      {'williamboman/mason.nvim'},           -- Optional
-      {'williamboman/mason-lspconfig.nvim'}, -- Optional
+      { 'neovim/nvim-lspconfig' },             -- Required
+      { 'williamboman/mason.nvim' },           -- Optional
+      { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},     -- Required
-      {'hrsh7th/cmp-nvim-lsp'}, -- Required
-      {'L3MON4D3/LuaSnip'},     -- Required
+      { 'hrsh7th/nvim-cmp' },     -- Required
+      { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+      { 'L3MON4D3/LuaSnip' },     -- Required
     }
   },
 
@@ -80,7 +80,16 @@ require("lazy").setup({
 
   "nvim-lua/plenary.nvim",
   'glepnir/dashboard-nvim',
-
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    config = function()
+      require("toggleterm").setup({
+        open_mapping = [[<c-t>]],
+        direction = "float",
+      })
+    end,
+  },
   {
     'lewis6991/gitsigns.nvim',
     config = function()
@@ -93,8 +102,10 @@ require("lazy").setup({
   {
     'nvim-telescope/telescope.nvim',
     ft = "dashboard",
-    tag = '0.1.1',
-    dependencies = { { 'nvim-lua/plenary.nvim' } }
+    dependencies = { { 'nvim-lua/plenary.nvim' } },
+    config = function ()
+      require("telescope").setup {}
+    end
   },
 
   {

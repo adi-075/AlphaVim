@@ -1,7 +1,7 @@
 -- Editor Settings
 require "adi.config.autocmds"
 require "adi.config.options"
-require "adi.config.toggleterm"
+--require "adi.config.toggleterm"
 
 -- Keymaps
 require "adi.config.keymaps"
@@ -14,3 +14,4 @@ vim.cmd [[hi NonText guifg=bg]]
 
 -- Package Manager
 require "plugins.lazy"
+

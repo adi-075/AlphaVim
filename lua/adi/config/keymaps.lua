@@ -1,5 +1,4 @@
 -- Keymaps
-
 -- File Operations
 vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
 vim.keymap.set('n', '<leader>v', '<cmd>vnew<cr>')

@@ -14,3 +14,4 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   group = mygroup,
   desc = "Reload config on save",
 })
+
