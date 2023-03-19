@@ -5,8 +5,74 @@ local lsp = require('lsp-zero').preset({
   suggest_lsp_servers = false,
 })
 
--- (Optional) Configure lua language server for neovim
-lsp.nvim_workspace()
+
+lsp.setup_nvim_cmp({
+  formatting = {
+    -- changing the order of fields so the icon is the first
+    --fields = {'abbr', 'kind', 'menu'},
+    fields = {'kind', 'abbr', 'menu' },
+    -- here is where the change happens
+    format = function(entry, vim_item)
+      --     Alternate Icons for menu
+      --      local menu_icon = {
+      --        nvim_lsp = 'λ',
+      --        luasnip = '⋗',
+      --        buffer = 'Ω',
+      --        path = '🖫',
+      --        nvim_lua = 'Π',
+      --      }
+
+      local kind_icons = {
+        Text = '  ',
+        Method = '  ',
+        Function = '  ',
+        Constructor = '  ',
+        Field = '  ',
+        Variable = '  ',
+        Class = '  ',
+        Interface = '  ',
+        Module = '  ',
+        Property = '  ',
+        Unit = '  ',
+        Value = '  ',
+        Enum = '  ',
+        Keyword = '  ',
+        Snippet = '  ',
+        Color = '  ',
+        File = '  ',
+        Reference = '  ',
+        Folder = '  ',
+        EnumMember = '  ',
+        Constant = '  ',
+        Struct = '  ',
+        Event = '  ',
+        Operator = '  ',
+        TypeParameter = '  ',
+      }
+      -- Kind Icons
+      vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
+
+      --source
+      vim_item.menu = ({
+        buffer = "[Buffer]",
+        nvim_lsp = "[LSP]",
+        luasnip = "[LuaSnip]",
+        nvim_lua = "[Lua]",
+        latex_symbols = "[LaTeX]",
+      })[entry.source.name]
+      return vim_item
+    end,
+  },
+  documentation = {
+    max_height = 15,
+    max_width = 60,
+    border = 'rounded',
+    col_offset = 0,
+    side_padding = 1,
+    winhighlight = 'Normal:Normal,FloatBorder:Normal,CursorLine:Visual,Search:None',
+    zindex = 1001
+  }
+})
 
 lsp.setup()
 
