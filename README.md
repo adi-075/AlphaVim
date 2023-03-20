@@ -15,6 +15,13 @@ command.</li>
 ```
 </ul>
 
+<h1>Dependencies</h1>
+Make sure to install ripgrep from here
+
+```sh
+https://github.com/BurntSushi/ripgrep
+```
+
 <h1>Screenshots</h1>
 <div class="screenshots">
 <img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/1.png" alt="Nvim - Dashboard"></img>
