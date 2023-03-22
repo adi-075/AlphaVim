@@ -44,7 +44,7 @@ require("dashboard").setup{
     shortcut = {
 --      { desc = ' Update', group = '@property',action ='Lazy Update' , key = 'u' },
       {
-        icon = ' ',
+        icon = '󰭎 ',
         icon_hl = '@variable',
         desc = 'Files',
         group = 'Label',
