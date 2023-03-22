@@ -16,10 +16,9 @@ vim.keymap.set('n', '<leader>p', '<cmd>Lazy<cr>')
 
 -- LSP
 vim.keymap.set('n', '<leader>li', '<cmd>LspInstall<cr>')
-vim.keymap.set('n', '<leader>lf', '<cmd>LspZeroFormat<cr>')
+--vim.keymap.set('n', '<leader>lf', '<cmd>LspZeroFormat<cr>')
 
 -- Telescope 
 vim.keymap.set('n', '<leader>t', '<cmd>Telescope find_files<cr>')
 vim.keymap.set('n', '<leader>c', '<cmd>Telescope colorscheme<cr>')
 vim.keymap.set('n', '<leader>td', '<cmd>Telescope live_grep<cr>')
-
