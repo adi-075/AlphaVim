@@ -22,3 +22,7 @@ vim.keymap.set('n', '<leader>li', '<cmd>LspInstall<cr>')
 vim.keymap.set('n', '<leader>t', '<cmd>Telescope find_files<cr>')
 vim.keymap.set('n', '<leader>c', '<cmd>Telescope colorscheme<cr>')
 vim.keymap.set('n', '<leader>td', '<cmd>Telescope live_grep<cr>')
+
+--Bufferline
+vim.keymap.set('n', '<S-l>', '<cmd>BufferLineCycleNext<cr>')
+vim.keymap.set('n', '<S-h>', '<cmd>BufferLineCyclePrev<cr>')
