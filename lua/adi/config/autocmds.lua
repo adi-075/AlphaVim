@@ -15,3 +15,10 @@ vim.api.nvim_create_autocmd("BufWritePost", {
   desc = "Reload config on save",
 })
 
+-- Auto Format File on Save
+vim.api.nvim_create_autocmd("BufWritePre", {
+  buffer = buffer,
+  callback = function()
+    vim.lsp.buf.format { async = false }
+  end
+})
