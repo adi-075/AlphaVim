@@ -15,3 +15,4 @@ vim.cmd [[hi NonText guifg=bg]]
 -- Package Manager
 require "plugins.lazy"
 
+
