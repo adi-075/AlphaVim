@@ -28,4 +28,5 @@ https://github.com/BurntSushi/ripgrep
 <img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/2.png" alt="Split Mode"></img>
 <img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/3.png" alt="LSP"></img>
 <img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/4.png" alt="Telescope.nvim"></img>
+<img src="https://raw.githubusercontent.com/adi-075/Adi-Neovim/master/assets/5.png" alt="Neo-Tree"></img>
 </div>
