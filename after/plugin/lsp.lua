@@ -10,7 +10,7 @@ lsp.setup_nvim_cmp({
   formatting = {
     -- changing the order of fields so the icon is the first
     --fields = {'abbr', 'kind', 'menu'},
-    fields = {'kind', 'abbr', 'menu' },
+    fields = { 'kind', 'abbr', 'menu' },
     -- here is where the change happens
     format = function(entry, vim_item)
       --     Alternate Icons for menu
@@ -63,18 +63,7 @@ lsp.setup_nvim_cmp({
       return vim_item
     end,
   },
-  documentation = {
-    max_height = 15,
-    max_width = 60,
-    border = 'rounded',
-    col_offset = 0,
-    side_padding = 1,
-    winhighlight = 'Normal:Normal,FloatBorder:Normal,CursorLine:Visual,Search:None',
-    zindex = 1001
-  }
 })
 
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 lsp.setup()
-
-
