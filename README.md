@@ -1,4 +1,4 @@
-# Adi-Neovim
+# AlphaVim
 This is my config for Neovim.
 
 <h1>Goals of this project</h1>
